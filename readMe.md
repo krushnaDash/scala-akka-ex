@@ -1,0 +1,1 @@
+Use sbt assembly to create a sign jar with all dependency
