@@ -1,7 +1,7 @@
 package com.krushna
 package spark
 
-import org.apache.log4j.{Level, Logger}
+//import org.apache.log4j.{Level, Logger}
 import org.apache.spark.{RangePartitioner, SparkConf, SparkContext}
 
 import scala.util.Properties.isWin
@@ -9,7 +9,7 @@ import scala.util.Properties.isWin
 case class CFFPurchase(cusid: Int,destination: String,amount: Double)
 
 object GroupByEx extends App {
-  Logger.getLogger("org.apache.spark").setLevel(Level.ERROR)
+  //Logger.getLogger("org.apache.spark").setLevel(Level.ERROR)
   if (isWin) System.setProperty("hadoop.home.dir", System.getProperty("user.dir") + "\\winutils\\hadoop-3.3.1")
   @transient lazy val conf: SparkConf = new SparkConf().setMaster("local").setAppName("Example")
   @transient lazy val sc: SparkContext = new SparkContext(conf)

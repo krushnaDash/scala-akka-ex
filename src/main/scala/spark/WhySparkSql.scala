@@ -3,7 +3,7 @@ package spark
 
 import com.krushna.spark.SparkSql.spark
 import org.apache.spark.sql.SparkSession
-import org.apache.log4j.{Level, Logger}
+//import org.apache.log4j.{Level, Logger}
 
 object WhySparkSql extends App{
   val spark: SparkSession = SparkSession.builder().master("local").getOrCreate()
